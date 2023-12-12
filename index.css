@@ -1,0 +1,468 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+/* Header Section */
+nav {
+    
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    color: rgb(233,152,169);
+    position:sticky;
+    top:0;
+    z-index: 999;
+}
+nav h1 {
+    font-size: 35px;
+    cursor: pointer;
+    color:gold;
+    font-family: 'Indie Flower', cursive;
+    text-shadow: 3px 3px black;
+}
+.subMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+    transition: all 0.5s; 
+}
+.subMenu a {
+    font-size: 18px;
+    color:rgb(233,152,169);
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.subMenu a:hover {
+    color:gold;
+}
+.menuIcon {
+    font-size: 25px;
+}
+nav input:checked~.subMenu {
+    left: 0;
+}
+nav input, nav .menuIcon {
+ display: none;
+}
+/* Background Image and welcome message */
+img{
+    object-fit: cover;
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+.wel{ 
+    position: absolute;
+    bottom:30px;
+    left:750px;
+    color: white;
+}
+.wel h1{
+    font-size: 50px;
+}
+.wel p{
+    font-size:18px;
+    line-height: 30px;
+    padding:20px 10px;
+}
+.wel button{
+    width:200px;
+    padding:10px;
+    border:1px solid  rgb(242,100,131);
+    font-size: 18px;
+    color:white;
+    background-color: rgb(242,100,131);
+    cursor: pointer;
+}
+.wel button:hover{
+    transition: 0.5s;
+    color:rgb(242,100,131);
+    background-color:white ;
+}
+
+/* Our ice creams  */
+
+.ouricecreams h1{
+    font-size:45px;
+    text-align:center;
+    padding:60px 0px 20px;
+}
+.ouricecreams p{
+    font-size:18px;
+    text-align:center;
+    line-height: 28px;
+
+}
+.icecream{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+.icecream img{
+    object-fit: cover;
+    border-radius:20px;
+    border:2px solid blue;
+    margin: 50px 0px;
+    height:380px;
+    width:250px;
+}
+.icecream img:hover{
+    transform: scale(1.1);
+    border:2px solid gold;
+    transition: 0.3s;
+}
+.ouricecreams .seemorebtn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.ouricecreams button{
+    width:200px;
+    padding:10px;
+    font-size:18px;
+    border:1px solid rgb(255,158,106);
+    color:white;
+    background-color: rgb(255,158,106);
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+.ouricecreams button:hover{
+    background-color: white;
+    color:rgb(255,158,106);
+    transition: 0.5s;
+}
+
+/* Image with side content */
+
+.overall{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.overall .imgbox1{
+    width:50%;
+    height:100vh;
+    background-color: rgb(251,174,191);
+}
+.overall .imgbox1 img{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+   
+}
+.overall .box2{
+    width:50%;
+    padding:0px 30px;
+}
+.box2 h1{
+    font-size:35px;
+    padding:30px 0px;
+}
+.box2 p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.box2 button{
+    width:200px;
+    padding:10px;
+    border:1px solid  rgb(242,100,131);
+    font-size: 18px;
+    color:white;
+    background-color: rgb(242,100,131);
+    margin:30px 0px;
+    cursor: pointer;
+}
+.box2 button:hover{
+    transition: 0.5s;
+    color:rgb(242,100,131);
+    background-color: white;
+}
+
+/*  Image with side content 2 */
+.overall2{
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.overall2 .imgbox2{
+    width:50%;
+    height:100vh;
+    background-color: rgb(255,204,177);
+}
+.overall2 .imgbox2 img{
+    object-fit: cover;
+    height:100%;
+    width:100%;
+}
+.overall2 .box3{
+    width:50%;
+    padding:50px;
+}
+.box3 h1{
+    font-size:35px;
+    padding:30px 0px;
+}
+.box3 p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.box3 button{
+    width:200px;
+    padding:10px;
+    border:1px solid  rgb(255,158,106);
+    font-size: 18px;
+    color:white;
+    background-color: rgb(255,158,106);
+    margin:30px 0px;
+    cursor: pointer;
+}
+.box3 button:hover{
+    transition: 0.5s;
+    color:rgb(255,158,106);
+    background-color:white ;
+}
+
+/* Forms and Location */
+
+.overall3{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overall3 .box4{
+    margin: auto;
+    padding-left: 100px;
+    width:50%;
+    height:100vh;
+    background-color:rgb(252,175,192);
+}
+.overall3 form input{
+    /* width:480px; */
+    width:80%;
+    height:40px;
+    padding:25px;
+    font-size: 18px;
+    margin:10px 0px;
+    border-radius: 5px;
+    border:none;
+}
+.overall3 .message{
+    height:150px;
+}
+form button{
+    width:200px;
+    padding:10px;
+    border:1px solid rgb(242,100,131);
+    font-size: 18px;
+    color:white;
+    background-color: rgb(242,100,131);
+    margin:30px 0px;
+    cursor: pointer;
+}
+form button:hover{
+    transition: 0.5s;
+    background-color:white ;
+    color:rgb(242,100,131);
+}
+.box4 h1{
+    color:white;
+    font-size:35px;
+    padding:40px 0px;
+}
+
+/* Map Location */
+.overall3 .map{
+    width:50%;
+    height:100vh;
+}
+
+.map iframe{
+    margin: 80px 50px;
+    width:75%;
+    height:70vh;
+    border:none;
+    border-radius: 30px;
+    
+}
+
+/* Testimonial */
+
+.overalltestimonial{
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.overalltestimonial .card{
+    width:50%;
+    text-align: center;
+}
+.card h1{
+    font-size: 35px;
+    margin:40px 0px;
+}
+.content img{
+    height:150px;
+    width:150px;
+    border-radius:50%;
+    border:5px solid grey;
+}
+.content h3{
+    color:rgb(255,158,106);
+    padding:20px 0px;
+    font-size: 30px;
+}
+.content h2{
+    margin: 20px 0px;
+}
+.content p{
+    font-size: 18px;
+    line-height: 25px;
+}
+.content{
+    padding:40px;
+    background-color: white;
+}
+.layout{
+    border: 1px solid black;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* Footer */
+.footer{
+    margin-top:80px;
+    width:100%;
+    background-color: rgb(237,235,240);
+}
+.footer .details{
+    padding:60px 0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    
+    
+}
+.details span{
+    color: #f26483;
+}
+ .fa-location-dot, .fa-phone,.fa-envelope{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #f26483;
+    color: #f26483;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-right: 10px;
+    padding:10px;
+}
+/* Follow Us */
+.followus{
+    text-align: center;
+}
+.followus h1{
+    padding-bottom: 20px;
+}
+.followus p{
+    font-size:18px;
+    line-height: 25px;
+}
+.fa-facebook,.fa-twitter,.fa-instagram,.fa-youtube{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #f26483;
+    color: #f26483;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-right: 10px;
+    padding:10px;   
+}
+.icons{
+    padding:30px 0px;
+}
+.copyright{
+    margin-bottom: 20px;
+}
+.footer img{
+    height:100%;
+    width:100%;
+    object-fit:cover;
+}
+
+
+
+/* Media Query */
+@media only screen and (min-width:320px) and (max-width:800px) {
+    .subMenu {
+        position: fixed;
+        z-index: 3;
+        background-color: rgb(233,152,169);
+        color:white;
+        left: -100%;
+        top: 82px;
+        height: 65vh;
+        /* width: 100%; */
+        flex-direction: column;
+        justify-content: left;
+        padding: 70px 0px 0px;
+        
+    }
+    .subMenu a  {
+        font-size: 25px;
+        color:white;
+    }
+    nav .menuIcon {
+        display: inline;
+    }
+    .wel{
+        left:0;
+        text-align: center;
+    }
+    .overall{
+        flex-direction: column;
+    }
+    .overall .imgbox1,.box2{
+        width:100%;
+
+    }
+    .box2 p{
+        line-height: 25px;
+        margin:0;
+    }
+    .overall2{
+        flex-direction: column;
+    }
+    .overall3{
+        flex-direction: column;
+        
+    }
+    .overall3 form input{
+        width:100%;
+    }
+}
